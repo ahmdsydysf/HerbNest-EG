@@ -592,7 +592,7 @@
                         <img src="{{ asset('allAssets/web/assets/images/project/afif-ramdhasuma.webp') }}"
                             alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href=""><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>
@@ -608,7 +608,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/AmchurPowder.webp') }}" alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href=""><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>
@@ -625,7 +625,7 @@
                         <img src="{{ asset('allAssets/web/assets/images/project/CorianderPowder.webp') }}"
                             alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href=""><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>
@@ -642,7 +642,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/CuminPowder.webp') }}" alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href=""><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>
@@ -658,7 +658,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/engin-akyurt.webp') }}" alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href=""><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>
@@ -675,7 +675,7 @@
                         <img src="{{ asset('allAssets/web/assets/images/project/Fenugreek Powder.webp') }}"
                             alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href=""><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>

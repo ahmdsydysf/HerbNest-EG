@@ -121,7 +121,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/AmchurPowder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Cumin <br> Powder</h4>
@@ -134,7 +134,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/CorianderPowder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Cumin <br> Powder</h4>
@@ -147,7 +147,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/CuminPowder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Fenugreek <br> Powder</h4>

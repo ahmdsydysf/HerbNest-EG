@@ -36,7 +36,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/afif-ramdhasuma.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -50,7 +50,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/AmchurPowder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -64,7 +64,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/CorianderPowder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -78,7 +78,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/CuminPowder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -92,7 +92,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/engin-akyurt.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -106,7 +106,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/Fenugreek Powder.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.html"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -120,7 +120,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/katrina-wright.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.htmle-img-7.jpg"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}e-img-7.jpg"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -134,7 +134,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/maja-il.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.htmle-img-8.jpg"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}e-img-8.jpg"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>
@@ -148,7 +148,7 @@
                     <div class="our_projects_one_image">
                         <img src="{{ asset('allAssets/web/assets/images/project/min-ling.webp') }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="projects-details.htmle-img-9.jpg"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details') }}e-img-9.jpg"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>Bridge <br> Construction</h4>

@@ -30,6 +30,9 @@ Route::group(
         Route::get('/products', function () {
             return view('product');
         })->name('product');
+        Route::get('/product/details', function () {
+            return view('product-details');
+        })->name('product-details');
 
 
     }
