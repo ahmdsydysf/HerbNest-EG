@@ -1,6 +1,8 @@
 @extends('webLayout.app')
 
 @section('page_content')
+
+
 <!--Page Header Start-->
 <section class="page-header"
     style="background-image: url({{ asset('allAssets/web/assets/images/backgrounds/upper-img.webp') }});">
@@ -37,7 +39,8 @@
             </div>
             <div class="col-xl-7">
                 <div class="contact-one__form__wrap">
-                    <form action="inc/sendemail.php" class="contact-one__form contact-form-validated">
+                    <form action="{{ route('contacts_us') }}" method="POST" class="contact-one__form contact-form-validated">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="input-group">
@@ -51,12 +54,12 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" name="Phone" placeholder="Phone">
+                                    <input type="text" name="phone" placeholder="Phone">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" name="Subject" placeholder="Subject">
+                                    <input type="text" name="subject" placeholder="Subject">
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -85,4 +88,6 @@
         class="google-map__contact" allowfullscreen></iframe>
 
 </section>
+
+
 @endsection

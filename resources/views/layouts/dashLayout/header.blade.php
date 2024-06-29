@@ -22,6 +22,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('allAssets/dash/dist/css/style.css') }}" rel="stylesheet" type="text/css">
 </head>
+@include('sweetalert::alert')
 
 <body>
     <!-- Preloader -->
@@ -317,65 +318,27 @@
                         <span>UI</span>
                     </div>
                     <ul class="navbar-nav flex-column">
-                        <li class="nav-item">
+                        <li class="nav-item {{ request()->segment(2) == '' ? 'active' : '' }}">
                             <a class="nav-link" href="javascript:void(0);" data-toggle="collapse"
                                 data-target="#Components_drp">
                                 <span class="feather-icon"><i data-feather="layout"></i></span>
-                                <span class="nav-link-text">Components</span>
+                                <span class="nav-link-text">Section</span>
                             </a>
                             <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
-                                <li class="nav-item">
+                                <li class="nav-item {{ request()->segment(2) == 'products' ? 'active' : '' }}">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="alerts.html">Alerts</a>
+                                            <a class="nav-link" href="{{ route('dashboard.products.index') }}">Products</a>
                                         </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul id="Components_drp" class="nav flex-column collapse collapse-level-1">
+                                <li class="nav-item {{ request()->segment(2) == 'contact' ? 'active' : '' }}">
+                                    <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="avatar.html">Avatar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="badge.html">Badge</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="buttons.html">Buttons</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="cards.html">Cards</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="carousel.html">Carousel</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="collapse.html">Collapse</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dropdowns.html">Dropdown</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="list-group.html">List Group</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="modal.html">Modal</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="nav.html">Nav</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="navbar.html">Navbar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="nestable.html">Nestable</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pagination.html">Pagination</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="popovers.html">Popovers</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="progress.html">Progress</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="tooltip.html">Tooltip</a>
+                                            <a class="nav-link" href="{{ route('dashboard.contacts.index') }}">contacts</a>
                                         </li>
                                     </ul>
                                 </li>

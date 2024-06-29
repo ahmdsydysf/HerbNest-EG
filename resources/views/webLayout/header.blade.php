@@ -27,7 +27,7 @@
     <!-- Fonts-->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" /> 
 
     <!-- Css-->
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/animate.min.css') }}" />
@@ -39,7 +39,6 @@
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/swiper.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/bootstrap-select.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/jarallax.css') }}" />
-
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/jquery.mCustomScrollbar.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/bootstrap-datepicker.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/vegas.min.css') }}" />
@@ -50,7 +49,7 @@
     <!-- Template styles -->
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('allAssets/web/assets/css/responsive.css') }}" />
-
+    
     @if (app()->getLocale()=='ar')
     @php
     $font =asset('allAssets/web/assets/fonts/18410-ah-naskh-hadith(1).ttf') ;
@@ -76,22 +75,26 @@
             font-family: myFirstFont2;
             src: url($font);
         }
-
+        
         .swiper-slide .swiper-slide-inner h2 {
             font-family: myFirstFont2;
             color: #ffffff;
         }
-    </style>
-    @endif
+        
+        </style>
+
+@endif
+@stack('custom_css')
+
 </head>
 
 <body>
     <div class="preloader">
         <img src="{{ asset('allAssets/web/assets/images/resources/logo/w-loader.webp') }}" class="preloader__image"
-            alt="main logo in white" />
+        alt="main logo in white" />
     </div>
     <!-- /.preloader -->
-
+    
     <div class="page-wrapper">
         <div class="site-header__header-one-wrap clearfix">
 
@@ -167,6 +170,7 @@
                 </div>
             </div>
 
+            @include('sweetalert::alert')
             <header class="main-nav__header-one">
                 <div class="container">
                     <nav class="header-navigation one stricky py-2">
@@ -227,4 +231,5 @@
                     </nav>
                 </div>
             </header>
+
         </div>

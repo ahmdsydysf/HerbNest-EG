@@ -30,131 +30,56 @@
             </div>
         </div>
         <div class="row filter-layout masonary-layout">
+            @foreach ( $data as $product )
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds cons elec">
                 <!--Projects One Single-->
                 <div class="our_projects_one_single">
                     <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/afif-ramdhasuma.webp') }}" alt="">
+                        <img src="{{ $product->main_image }}" alt="">
                         <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details', ['Product' => $product]) }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
+                            <h4>{{ $product->translate(LaravelLocalization::getCurrentLocale())->name }}</h4>
                         </div>
                     </div>
                 </div>
+                    
+                
+                
             </div>
+            @endforeach
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item elec cons">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/AmchurPowder.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item elec fac">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/CorianderPowder.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds cons">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/CuminPowder.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item fac cons">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/engin-akyurt.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds elec">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/Fenugreek Powder.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds elec">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/katrina-wright.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}e-img-7.jpg"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds elec">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/maja-il.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}e-img-8.jpg"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds elec">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/min-ling.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}e-img-9.jpg"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Bridge <br> Construction</h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -35,17 +35,14 @@
             <div class="col-xl-7 col-lg-7">
                 <div class="projects_details_content_left">
                     <div class="bridge_construction">
-                        <h4> Amchur Powder </h4>
-                        <p> Amchoor or aamchur or amchur, also referred to as mango powder, is a fruity spice
-                            powder made from dried unripe green mangoes and is used as a citrusy seasoning. It
-                            is mostly produced in India, and is used to flavour foods and add the
-                            nutritional benefits of mangoes when the fresh fruit is out of season .</p>
+                        <h4> {{ $product->translate(LaravelLocalization::getCurrentLocale())->name }} </h4>
+                        <p> {{ $product->translate(LaravelLocalization::getCurrentLocale())->description }}</p>
                     </div>
                 </div>
 
                 <div class="projects_details_content_bottom">
                     <div class="projects_details_content_bottom_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/afif-ramdhasuma.webp') }}" alt="">
+                        <img src="{{  $product->main_image }}" alt="" width="665" height="439">
                     </div>
                     <div class="projects_details_content_bottom_list mt-2">
                         <ul class="list-unstyled">
@@ -116,44 +113,27 @@
             <h2>Explore Our Products</h2>
         </div>
         <div class="row">
+            @foreach ( $newProduct as $product )
             <div class="col-xl-4">
                 <div class="our_projects_one_single">
                     <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/AmchurPowder.webp') }}" alt="">
+                        <img src=" {{ $product->main_image  }} " alt="">
                         <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details', ['Product' => $product]) }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
-                            <h4>Cumin <br> Powder</h4>
+                            <h4>{{ $product->translate(LaravelLocalization::getCurrentLocale())->name }}</h4>
                         </div>
                     </div>
                 </div>
+                    
+            </div>
+            @endforeach
+            <div class="col-xl-4">
+               
             </div>
             <div class="col-xl-4">
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/CorianderPowder.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Cumin <br> Powder</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/CuminPowder.webp') }}" alt="">
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>Fenugreek <br> Powder</h4>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </div>

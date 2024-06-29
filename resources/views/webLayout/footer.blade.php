@@ -212,9 +212,10 @@
 <script src="{{ asset('allAssets/web/assets/js/appear.js')}}"></script>
 <script src="{{ asset('allAssets/web/assets/js/jarallax.min.js')}}"></script>
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
-
 <!-- template scripts -->
 <script src="{{ asset('allAssets/web/assets/js/theme.js')}}"></script>
+@stack('custom_js')
+
 
 </body>
 

@@ -585,105 +585,45 @@
             </div>
         </div>
         <div class="row filter-layout masonary-layout">
+            @foreach ( $data as $product )
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds cons elec">
                 <!--Projects One Single-->
                 <div class="our_projects_one_single">
                     <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/afif-ramdhasuma.webp') }}"
+                        <img src="{{ $product->main_image }}"
                             alt="Powder" />
                         <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
+                            <a href="{{ route('product-details', ['Product' => $product]) }}"><span class="flaticon-right-arrow"></span></a>
                         </div>
                         <div class="our_projects_one_text">
                             <h4>
-                                {{ __('Amchur Powder') }}
+                                {{ $product->translate(LaravelLocalization::getCurrentLocale())->name }}
                             </h4>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item elec cons">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/AmchurPowder.webp') }}" alt="Powder" />
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>
-                                {{ __('Coriander Powder') }}
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item elec fac">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/CorianderPowder.webp') }}"
-                            alt="Powder" />
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>
-                                {{ __('Cumin Powder') }}
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds cons">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/CuminPowder.webp') }}" alt="Powder" />
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>
-                                {{ __('Amchur Powder') }}
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item fac cons">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/engin-akyurt.webp') }}" alt="Powder" />
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>
-                                {{ __('Fenugreek Powder') }}
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+             
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 filter-item inds elec">
                 <!--Projects One Single-->
-                <div class="our_projects_one_single">
-                    <div class="our_projects_one_image">
-                        <img src="{{ asset('allAssets/web/assets/images/project/Fenugreek Powder.webp') }}"
-                            alt="Powder" />
-                        <div class="our_projects_one_icon">
-                            <a href="{{ route('product-details') }}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                        <div class="our_projects_one_text">
-                            <h4>
-                                {{ __('Red Chilli Flakes') }}
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <div class="cta_one_right_btn products-btn">
